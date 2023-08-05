@@ -1,0 +1,70 @@
+Что вы сегодня узнали
+1) Жизненный цикл изменений в Git
+2) Сравнение версий и просмотр изменений
+3) Игнорирование изменений, gitignore
+4) Отмена несохранённых изменений
+5) Отмена сохранённых изменений
+6) Отмена слияний веток
+7) Откладывание изменений
+8) Слияние и перемещение изменений
+
+
+Команды управления состояниями файлов
+git status
+git add <file(s)>
+git commit -m 'some changes'
+git show
+
+Команды просмотра изменений
+Работа с изменениями
+git log
+git status
+git diff <file>
+git diff
+git diff <commit>
+git diff <commit1> <commit2>
+git diff <commit1> <commit2> <file>
+git diff <file1> <file2>
+git blame <file>
+
+Синтаксис файла .gitignore
+Работа с изменениями
+error.log
+*.log
+logs/
+logs/*.log
+!logs/special.log
+
+Удаление несохранённых изменений
+Работа с изменениями
+git restore <file>
+git restore --staged <file>
+git reset --hard
+git clean -f
+git rm --cached
+
+Удаление (сброс) коммитов
+Работа с изменениями
+git reset --soft <commit>
+git reset --mixed <commit>
+git reset --hard <commit>
+git commit --amend -m <new>
+git commit --amend --no-edit
+
+Отмена слияния веток
+Работа с изменениями
+git reset --merge <commit>
+git merge --abort
+
+Команды откладывания изменений
+Работа с изменениями
+git stash
+git stash list
+git stash pop
+git stash drop
+
+Команды перемещения изменений
+Работа с изменениями
+git merge new_branch
+git rebase new_branch
+git cherry-pick commit
